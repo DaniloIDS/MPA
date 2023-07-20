@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/config.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/cards.css">
+    <title>MPA</title>
+</head>
+<body>
+    <div id="container">
+        <header id="cabecalho">
+            <div class="containerLogo">
+                <h1 id="tituloPrincipal">Market Planejadores Agroind</h1>
+            </div>
+
+            <span id="burger" class="material-icons" onclick="ocultar()">menu</span>
+            <menu id="itensMenu">
+            <ul class="menu-list">
+                <li><a href="/templates/create-offer.html" class="menu-item"><span class="material-icons item">attach_money</span>Criar Oferta</span></a></li>
+                <li><a href="#" class="menu-item"><span class="material-icons item">store</span> Market</a></li>
+                <li><a href="#" class="menu-item"><span class="material-icons item">emoji_events</span>Prêmios</a></li>
+                <li><a href="#" class="menu-item"><span class="material-icons item">settings</span>Configurações</a></li>
+            </ul>
+            </menu>
+        </header>
+
+        <main id="secaoPrincipal">
+
+            <div class="card">
+                <img src="../assets/img/profit-bar.svg" alt="" class="iconCard">
+                <p class="paragrafoCard">Aumente a perfomance do seu estoque e garanta cobertura de produtos</p>
+            </div>
+
+            <div class="card">
+                <img src="../assets/img/money.svg" alt="" class="iconCard">
+                <p class="paragrafoCard">Economize em capital empregado e ajude a ampliar o giro de estoque</p>
+            </div>
+
+            <div class="card">
+                <img src="../assets/img/reward.svg" alt="" class="iconCard">
+                <p class="paragrafoCard">Faça a companhia ganhar e ganhe você também. Recompensas exclusivas aos planejadores</p>
+            </div>
+
+
+        </main>
+
+        <footer id="rodape">
+            <p>Criado por <strong>@DaniloIDS - 2023</strong> - Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <script>
+        function ocultar(){
+            if(itensMenu.style.display == 'block'){
+                itensMenu.style.display = 'none'
+            } else{
+                itensMenu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

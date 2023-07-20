@@ -1,0 +1,22 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid rgba(131, 131, 131, 0.438);
+    box-shadow: 2px 2px 20px 4px rgba(139, 139, 139, 0.438);
+    border-radius: 10px;
+}
+.iconCard{
+    width: 6rem;
+    display: block;
+}
+
+.paragrafoCard{
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgb(88, 88, 88);
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/config.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/cards.css">
+    <link rel="stylesheet" href="../styles/form.css">
+    <title>MPA</title>
+</head>
+<body>
+    <div id="container">
+        <header id="cabecalho">
+            <div class="containerLogo">
+                <h1 id="tituloPrincipal">Market Planejadores Agroind</h1>
+            </div>
+
+            <span id="burger" class="material-icons" onclick="ocultar()">menu</span>
+            <menu id="itensMenu">
+                <ul class="menu-list">
+
+                    <li><a href="/" class="menu-item"><span class="material-icons item">home</span>Home</span></a></li>
+                    <li><a href="#" class="menu-item"><span class="material-icons item">store</span> Market</a></li>
+                    <li><a href="#" class="menu-item"><span class="material-icons item">emoji_events</span>Prêmios</a></li>
+                    <li><a href="#" class="menu-item"><span class="material-icons item">settings</span>Configurações</a></li>
+                </ul>
+            </menu>
+        </header>
+
+        <main id="secaoPrincipal">
+
+            <form action="/" class="formOferta">
+
+                <label class="label" for="tipoOperacao" class="label">Tipo de operação</label>
+                <select name="tipoOperacao" id="tipoOperacao" size="1" class="input">
+                    <option value="Venda">Venda</option>
+                    <option value="Compra">Compra</option>
+                </select>
+
+                <label class="label" for="codigoInsumo">Código do Insumo</label>
+                <input type="number" name="codigoInsumo" id="codigoInsumo" class="input"min="3000000" max="3999999" minlength="7" maxlength="7">
+
+                <label class="label" for="descricaoInsumo">Descrição SAP</label>
+                <input type="text" name="descricaoInsumo" id="descricaoInsumo" disabled class="input">
+
+                <label class="label" for="nomeComercial">Nome Comercial</label>
+                <input type="text" name="nomeComercial" id="nomeComercial" class="input">
+
+                <label class="label" for="quantidadeProduto">Quantidade Insumo</label>
+                <input type="number" name="quantidadeProduto" id="quantidadeProduto" class="input">
+
+                <label class="label" for="observacao">Observação</label>
+                <input type="text" name="observacao" id="observacao" class="input">
+
+                <input type="submit" value="Enviar" class="input submit">
+            </form>
+
+        </main>
+
+        <footer id="rodape">
+            <p>Criado por <strong>@DaniloIDS - 2023</strong> - Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <script>
+        function ocultar(){
+            if(itensMenu.style.display == 'block'){
+                itensMenu.style.display = 'none'
+            } else{
+                itensMenu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

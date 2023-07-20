@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --principal: #801F80;
+    --secundaria: #EB368F ;
+    --terciaria: #34BBDA;
+    --destaque: #F8A909;
+    --contraste: #59595C;
+    --detalhe: #F57821;
+    --textoBranco: #FFFFFF;
+    --textoPreto: #000000;
+    --fundopagina: #e2e2e2;
+}
+
+body{
+ background-color: var(--fundopagina);
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a, a:focus, a:visited, a:hover{
+    text-decoration: none;
+    list-style: none;
+    color: var(--textoBranco);
+}

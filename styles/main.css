@@ -1,0 +1,68 @@
+#container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 7fr auto;
+    grid-template-areas: 'header'
+                         'main'
+                         'rodape';
+    
+}
+
+#cabecalho{
+    grid-area: 'header';
+    background-color: var(--principal);
+    color: var(--textoBranco);
+    text-align: center;  
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;
+}
+
+#secaoPrincipal{
+    grid-area: 'main'; 
+}
+
+#rodape{
+    grid-area: 'rodape';
+    background-color: #471147;
+    min-height: 2rem;
+    color: var(--textoBranco);
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 10px;
+}
+
+#tituloPrincipal{
+    padding: 2rem 1rem;
+    text-shadow: 2px 2px 4px #2b023b;
+}
+
+#burger{
+    background-color: #471147;
+    display: block;
+    height: 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 3rem;
+}
+
+#itensMenu{
+    display: none;
+}
+
+.menu-item{
+    background-color: #471147;
+    padding: 10px 0;
+    border: 0.1px solid #801f805d;
+    display: flex;
+    align-content: space-between;
+    cursor: pointer;
+}
+
+.item{
+    padding: 0 10px;
+    width: 50%;
+    text-align: right;
+}
+
