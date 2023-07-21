@@ -26,3 +26,8 @@ a, a:focus, a:visited, a:hover{
     list-style: none;
     color: var(--textoBranco);
 }
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
