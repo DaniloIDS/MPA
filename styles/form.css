@@ -22,6 +22,33 @@
     border-radius: 5px;
 }
 
+.boxQtdInsumo{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.quantidade{
+    min-width: 70%;
+    flex-grow: 2;
+}
+
+.unidade{
+
+    flex-grow: 1;
+}
+
+#observacao{
+    min-width: 100%;
+    height: 5rem;
+    resize: none;
+    font-size: 1.3rem;
+    line-break: normal;
+    word-wrap: break-word;
+}
+
+
 .submit{
     background-color: var(--secundaria);
     padding: 1.5rem 0;
@@ -29,4 +56,6 @@
     font-weight: bolder;
     color: rgb(240, 240, 240);
     cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 2px 2px 4px rgba(110, 110, 110, 0.534);;
 }

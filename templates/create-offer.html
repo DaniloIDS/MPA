@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../styles/config.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/cards.css">
     <link rel="stylesheet" href="../styles/form.css">
     <title>MPA</title>
 </head>
@@ -40,21 +39,26 @@
                 </select>
 
                 <label class="label" for="codigoInsumo">Código do Insumo</label>
-                <input type="number" name="codigoInsumo" id="codigoInsumo" class="input"min="3000000" max="3999999" minlength="7" maxlength="7">
+                <input type="number" name="codigoInsumo" id="codigoInsumo" required class="input"min="3000000" max="3999999" minlength="7" maxlength="7">
 
                 <label class="label" for="descricaoInsumo">Descrição SAP</label>
                 <input type="text" name="descricaoInsumo" id="descricaoInsumo" disabled class="input">
 
                 <label class="label" for="nomeComercial">Nome Comercial</label>
-                <input type="text" name="nomeComercial" id="nomeComercial" class="input">
+                <input type="text" name="nomeComercial" required id="nomeComercial" class="input">
 
+                
                 <label class="label" for="quantidadeProduto">Quantidade Insumo</label>
-                <input type="number" name="quantidadeProduto" id="quantidadeProduto" class="input">
+
+                <div class="boxQtdInsumo">
+                    <input type="number" name="quantidadeProduto" required id="quantidadeProduto" class="input quantidade" min="1">
+                    <input type="text" name="unidadeMedida" id="unidadeMedida" disabled class="input unidade">
+                </div>
 
                 <label class="label" for="observacao">Observação</label>
-                <input type="text" name="observacao" id="observacao" class="input">
+                <textarea name="observacao" id="observacao" cols="30" rows="10" class="input"></textarea>
 
-                <input type="submit" value="Enviar" class="input submit">
+                <input type="submit" value="Criar Oferta" class="input submit">
             </form>
 
         </main>
