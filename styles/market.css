@@ -25,7 +25,6 @@
     border: 1px solid rgba(131, 131, 131, 0.438);
     box-shadow: 2px 2px 20px 4px rgba(139, 139, 139, 0.438);
     border-radius: 10px;
-    
 }
 
 .info{
@@ -94,6 +93,8 @@
     margin-top: 1rem;
     padding: 0.5rem;
     height: 2.5rem;
+    min-width: 7rem;
+    font-size: 1.01rem;
     border-radius: 10px;
     background-color: rgb(211, 1, 1);
     color: white;

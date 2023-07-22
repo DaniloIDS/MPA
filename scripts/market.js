@@ -1,12 +1,22 @@
 
 let boxOferta = document.querySelectorAll('div.boxOferta')
 
-console.log(boxOferta)
-
 for(let card of boxOferta){
     let exibirDetalhes = card.querySelector('p.exibirDetalhes')
     let ocultarDetalhes = card.querySelector('p.ocultarDetalhes')
     let listaSecundaria = card.querySelector('ul.info-secundaria')
+    let tipoOferta = card.querySelector('p.tipoOferta')
+    let botaoAcao = card.querySelector('button.botaoAcao')
+    
+    console.log(botaoAcao)
+
+    if(tipoOferta.innerText == 'Compra'){
+        tipoOferta.setAttribute('class', 'tipoOferta compra')
+        botaoAcao.innerText = 'Vender'
+    }else{
+        tipoOferta.setAttribute('class', 'tipoOferta venda')
+        botaoAcao.innerText = 'Comprar'
+    }
 
     exibirDetalhes.addEventListener('click', ()=>{
         listaSecundaria.style.display = 'flex';
@@ -19,14 +29,7 @@ for(let card of boxOferta){
         exibirDetalhes.style.display = 'flex';
         ocultarDetalhes.style.display = 'none';
     })
+
 }
 
-let tipoOfertas = document.querySelectorAll('p.tipoOferta')
 
-tipoOfertas.forEach((oferta)=>{
-    if(oferta.innerText == 'Compra'){
-        oferta.setAttribute('class', 'tipoOferta compra')
-    }else{
-        oferta.setAttribute('class', 'tipoOferta venda')
-    }
-})
