@@ -1,8 +1,21 @@
+.filtros{
+    max-width: 90%;
+    margin: 1rem auto;
+}
+
 .ofertas{
     max-width: 90%;
     display: flex;
     flex-direction: column;
     margin: 1rem auto;
+}
+
+
+#filtroUnidade, #filtroOferta{
+    background-color: var(--contraste);
+    color: white;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .boxOferta{
@@ -21,30 +34,74 @@
 
 .realce-info{
     font-weight: 600;
-    color: var(--contraste);
+    color: var(--textoPreto);
     font-family: Tahoma, Verdana, sans-serif;
 }
 
-.exibirDetalhes{
-    padding: 1rem 0;
+.ocultarDetalhes, .exibirDetalhes{
+    margin-top: 1rem;
     display: block;
     font-weight: 600;
     color: rgb(0, 0, 180);
     cursor: pointer;
 }
 
+.ocultarDetalhes{
+    display: none;
+}
+
 .tipoOferta{
     padding: 1rem;
-    background-color: var(--destaque);
     max-width: 6rem;
     height: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.384);
 
 }
 
+.tipoOferta.compra{
+    background-color: green;
+    color: #ffffff;
+}
+
+.tipoOferta.venda{
+    background-color: var(--destaque);
+    color: #000000;
+    font-weight: 700;
+}
+
+
+
 .info-secundaria{
     display: none;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+.detalhesCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.botaoAcao{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    background-color: rgb(211, 1, 1);
+    color: white;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    border: 1px solid rgb(99, 99, 99);
+    box-shadow: 4px 4px 15px 1px rgba(94, 94, 94, 0.445);
+    cursor: pointer;
+    align-self: flex-end;
 }

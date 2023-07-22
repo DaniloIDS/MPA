@@ -33,7 +33,7 @@
 
             <div class="filtros">
                 <label for="filtroOferta" class="label">Filtro Oferta</label>
-                <select name="filtroUnidade" id="filtroUnidade" class="input filtro">
+                <select name="filtroOferta" id="filtroOferta" class="input filtro">
                     <option value="ofertaCompra">Compra</option>
                     <option value="ofertaVenda">Venda</option>
                 </select>
@@ -58,49 +58,51 @@
                         <li class="info"><span class="realce-info">Quantidade:</span> 300 KG</li>
                         <li class="info"><span class="realce-info">Nome comercial:</span> Joya</li>
                     </ul>
-                    <p class="exibirDetalhes">Exibir Detalhes ...</p>
-                    <ul class="info-secundaria">
-                        <li class="info"><span class="realce-info">Unidade Remetente:</span> IDS Company</li>
-                        <li class="info"><span class="realce-info">Planejador:</span> Danilo IDS</li>
-                        <li class="info"><span class="realce-info">Observação:</span> </li>
-                    </ul>
+                    
+                    <div class="detalhesCard">
+                        <p class="exibirDetalhes">Exibir Detalhes ...</p>
+                        <ul class="info-secundaria">
+                            <li class="info"><span class="realce-info">Unidade Remetente:</span> IDS Company</li>
+                            <li class="info"><span class="realce-info">Planejador:</span> Danilo IDS</li>
+                            <li class="info"><span class="realce-info">Oferta criada em:</span> 20/07/2023 11:59</li>
+                            <li class="info"><span class="realce-info">Oferta expira em:</span> 27/07/2023 11:59</li>
+                            <li class="info"><span class="realce-info">Observação:</span> </li>
+                            <p class="ocultarDetalhes">Ocultar Detalhes ...</p>
+                        </ul>    
+                        <button class="botaoAcao">Comprar</button>
+                    </div>
                 </div>
 
                 <div class="boxOferta">
-                    <p class="tipoOferta">Compra</p>
+                    <p class="tipoOferta">Venda</p>
                     <ul class="info-principal">
                         <li class="info"><span class="realce-info">Código:</span>  3504998</li>
                         <li class="info"><span class="realce-info">Descrição SAP:</span> Produto X Y Z da ordem de Merlin 1 de Santo Antonio da Padroeita</li>
                         <li class="info"><span class="realce-info">Quantidade:</span> 300 KG</li>
                         <li class="info"><span class="realce-info">Nome comercial:</span> Joya</li>
                     </ul>
-                    <p class="exibirDetalhes">Exibir Detalhes ...</p>
-                    <ul class="info-secundaria">
-                        <li class="info"><span class="realce-info">Unidade Remetente:</span> IDS Company</li>
-                        <li class="info"><span class="realce-info">Planejador:</span> Danilo IDS</li>
-                        <li class="info"><span class="realce-info">Observação:</span> </li>
-                    </ul>
-                </div>
-
-                <div class="boxOferta">
-                    <p class="tipoOferta">Compra</p>
-                    <ul class="info-principal">
-                        <li class="info"><span class="realce-info">Código:</span>  3504998</li>
-                        <li class="info"><span class="realce-info">Descrição SAP:</span> Produto X Y Z da ordem de Merlin 1 de Santo Antonio da Padroeita</li>
-                        <li class="info"><span class="realce-info">Quantidade:</span> 300 KG</li>
-                        <li class="info"><span class="realce-info">Nome comercial:</span> Joya</li>
-                    </ul>
-                    <p class="exibirDetalhes">Exibir Detalhes ...</p>
-                    <ul class="info-secundaria">
-                        <li class="info"><span class="realce-info">Unidade Remetente:</span> IDS Company</li>
-                        <li class="info"><span class="realce-info">Planejador:</span> Danilo IDS</li>
-                        <li class="info"><span class="realce-info">Observação:</span> </li>
-                    </ul>
+                    
+                    <div class="detalhesCard">
+                        <p class="exibirDetalhes">Exibir Detalhes ...</p>
+                        <ul class="info-secundaria">
+                            <li class="info"><span class="realce-info">Unidade Remetente:</span> IDS Company</li>
+                            <li class="info"><span class="realce-info">Planejador:</span> Danilo IDS</li>
+                            <li class="info"><span class="realce-info">Oferta criada em:</span> 20/07/2023 11:59</li>
+                            <li class="info"><span class="realce-info">Oferta expira em:</span> 27/07/2023 11:59</li>
+                            <li class="info"><span class="realce-info">Observação:</span> </li>
+                            <p class="ocultarDetalhes">Ocultar Detalhes ...</p>
+                        </ul>    
+                        <button class="botaoAcao">Comprar</button>
+                    </div>
                 </div>
 
 
 
+                <!-- ============================================ -->
 
+
+
+               
             </div>
         
 
@@ -110,7 +112,7 @@
             <p>Criado por <strong>@DaniloIDS - 2023</strong> - Todos os direitos reservados</p>
         </footer>
     </div>
-
+    <script src="../scripts/market.js"></script>
     <script>
         function ocultar(){
             if(itensMenu.style.display == 'block'){
