@@ -2,6 +2,7 @@ require('dotenv').config()
 const path = require('path')
 const express = require('express')
 const mongoose = require('mongoose')
+const userRoutes = require('./routes/users')
 const app = express()
 
 
@@ -17,10 +18,7 @@ app.listen(process.env.PORTA, ()=>{console.log('Servidor rodando')})
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'templates'))
 
-app.use('/', express.static(path.join(__dirname, '/styles')))
-app.use('/', express.static(path.join(__dirname, '/assets')))
-
-console.log(path.join(__dirname, 'templates'))
-console.log(path.join(__dirname, '/styles'))
+app.use('/', express.static(path.join(__dirname, '/public')))
 
 app.get('/', (req,res)=>{res.render('index')})
+app.use('/users', userRoutes)
