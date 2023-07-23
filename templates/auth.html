@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../styles/config.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/formLogin.css">
+    <link rel="stylesheet" href="../styles/cards.css">
     <title>MPA</title>
 </head>
 <body>
@@ -18,30 +18,31 @@
 
             <span id="burger" class="material-icons" onclick="ocultar()">menu</span>
             <menu id="itensMenu">
-                <ul class="menu-list">
-
-                    <li><a href="/MPA/" class="menu-item"><span class="material-icons item">home</span>Home</span></a></li>
-                    <li><a href="market.html" class="menu-item"><span class="material-icons item">store</span> Market</a></li>
-                    <li><a href="#" class="menu-item"><span class="material-icons item">emoji_events</span>Prêmios</a></li>
-                    <li><a href="#" class="menu-item"><span class="material-icons item">settings</span>Configurações</a></li>
-                </ul>
+            <ul class="menu-list">
+                <li><a href="create-offer.html" class="menu-item"><span class="material-icons item">attach_money</span>Criar Oferta</span></a></li>
+                <li><a href="market.html" class="menu-item"><span class="material-icons item">store</span> Market</a></li>
+                <li><a href="#" class="menu-item"><span class="material-icons item">emoji_events</span>Prêmios</a></li>
+                <li><a href="#" class="menu-item"><span class="material-icons item">settings</span>Configurações</a></li>
+            </ul>
             </menu>
         </header>
 
         <main id="secaoPrincipal">
 
-            <img src="../assets/img/logoMarket.svg" alt="logo Market Planejadores" class="logoMarket">
-            
-            <form action="/" id="login">
+            <div class="card">
+                <img src="../assets/img/profit-bar.svg" alt="" class="iconCard">
+                <p class="paragrafoCard">Aumente a perfomance do seu estoque e garanta cobertura de produtos</p>
+            </div>
 
-                <label for="nomeUsuario" class="label">Nome Usuário</label>
-                <input type="text" name="nomeUsuario" id="nomeUsuario" maxlenght="8">
-            
-                <label for="senha" class="label">Senha</label>
-                <input type="password" name="senhaUsuario" id="senhaUsuario" required>
-                
-                <input type="submit" value="Acessar" id="botaoLogin">
-            </form>
+            <div class="card">
+                <img src="../assets/img/money.svg" alt="" class="iconCard">
+                <p class="paragrafoCard">Economize em capital empregado e ajude a ampliar o giro de estoque</p>
+            </div>
+
+            <div class="card">
+                <img src="../assets/img/reward.svg" alt="" class="iconCard">
+                <p class="paragrafoCard">Faça a companhia ganhar e ganhe você também. Recompensas exclusivas aos planejadores</p>
+            </div>
 
 
         </main>
@@ -62,4 +63,3 @@
     </script>
 </body>
 </html>
-

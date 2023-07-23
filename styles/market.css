@@ -10,12 +10,25 @@
     margin: 1rem auto;
 }
 
+.label{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
 
 #filtroUnidade, #filtroOferta{
     background-color: var(--contraste);
     color: white;
     font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1rem;
 }
 
 .boxOferta{
