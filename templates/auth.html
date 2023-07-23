@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../styles/config.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/form.css">
+    <link rel="stylesheet" href="../styles/formLogin.css">
     <title>MPA</title>
 </head>
 <body>
@@ -30,16 +30,17 @@
 
         <main id="secaoPrincipal">
 
+            <img src="../assets/img/logoMarket.svg" alt="logo Market Planejadores" class="logoMarket">
+            
             <form action="/" id="login">
 
-                <label for="nomeUsuario">Nome Usuário</label>
-                <input type="text" name="nomeUsuario" id="nomeUsuario">
+                <label for="nomeUsuario" class="label">Nome Usuário</label>
+                <input type="text" name="nomeUsuario" id="nomeUsuario" maxlenght="8">
             
-                <label for="senha">senha</label>
-                <input type="password" name="senhaUsuario" id="senhaUsuario">
-                <input type="button" value="x">
+                <label for="senha" class="label">Senha</label>
+                <input type="password" name="senhaUsuario" id="senhaUsuario" required>
                 
-                <input type="submit" value="Acessar">
+                <input type="submit" value="Acessar" id="botaoLogin">
             </form>
 
 
