@@ -1,0 +1,11 @@
+{
+  "name": "mpa",
+  "version": "1.0.0",
+  "description": "Aplicação para gerenciamento de ofertas de compra e venda internas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DaniloIDS",
+  "license": "ISC"
+}
