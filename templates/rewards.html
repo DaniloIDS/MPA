@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/config.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/rewards.css">
+    <title>MPA</title>
+</head>
+<body>
+    <div id="container">
+        <header id="cabecalho">
+            <div class="containerLogo">
+                <h1 id="tituloPrincipal">Market Planejadores Agroind</h1>
+            </div>
+
+            <span id="burger" class="material-icons" onclick="ocultar()">menu</span>
+            <menu id="itensMenu">
+                <ul class="menu-list">
+
+                    <li><a href="auth.html" class="menu-item"><span class="material-icons item">home</span>Home</span></a></li>
+                    <li><a href="create-offer.html" class="menu-item"><span class="material-icons item">attach_money</span>Criar Oferta</span></a></li>
+                    <li><a href="market.html" class="menu-item"><span class="material-icons item">store</span> Market</a></li>
+                    <li><a href="#" class="menu-item"><span class="material-icons item">settings</span>Configurações</a></li>
+                </ul>
+            </menu>
+        </header>
+
+        <main id="secaoPrincipal">
+
+            <h3 class="tituloReward">Sala de Recompensas</h3>
+
+            <div class="mensagemReward">
+                <p>Ao realizar operações de compra e venda dentro da companhia você garante cobertura e giro de estoque.</p>
+                <p>Mas não é só isso, você também ganha <strong>Energy Coins</strong>!</p>
+                <p>E aqui você pode trocar seus Energy Coins em <strong>recompensas</strong>. Confira abaixo:</p>
+            </div>
+            
+            <div class="recompensas">
+
+                <div class="cardRecompensa">
+                    <img src="../assets/img/squeeze_ids.jpg" alt="" class="imagemRecompensa">
+                    <div class="descricaoRecompensa">Squeeze Planejador Agroind</div>
+                    <div class="precoRecompensa">
+                        <div class="descricaoPreco">
+                            <span class="material-icons iconeEnergy">bolt</span>
+                            <div class="valorEnergy">90 Energy Coins</div>
+                        </div>
+                        <button type="submit" class="botaoTrocar">Trocar</button>
+                    </div>
+                </div>
+
+                 <div class="cardRecompensa">
+                    <img src="../assets/img/colete_ids.png" alt="" class="imagemRecompensa">
+                    <div class="descricaoRecompensa">Colete Personalizado Planejador</div>
+                    <div class="precoRecompensa">
+                        <div class="descricaoPreco">
+                            <span class="material-icons iconeEnergy">bolt</span>
+                            <div class="valorEnergy">150 Energy Coins</div>
+                        </div>
+                        <button type="submit" class="botaoTrocar">Trocar</button>
+                    </div>
+                </div>
+
+
+                 <div class="cardRecompensa">
+                    <img src="../assets/img/caneca_ids.png" alt="" class="imagemRecompensa">
+                    <div class="descricaoRecompensa">Caneca Planejador AgroInd</div>
+                    <div class="precoRecompensa">
+                        <div class="descricaoPreco">
+                            <span class="material-icons iconeEnergy">bolt</span>
+                            <div class="valorEnergy">20 Energy Coins</div>
+                        </div>
+                        <button type="submit" class="botaoTrocar">Trocar</button>
+                    </div>
+                </div>
+
+                <div class="cardRecompensa">
+                    <img src="../assets/img/headphone_ids.png" alt="" class="imagemRecompensa">
+                    <div class="descricaoRecompensa">Headphone Planejador AgroInd</div>
+                    <div class="precoRecompensa">
+                        <div class="descricaoPreco">
+                            <span class="material-icons iconeEnergy">bolt</span>
+                            <div class="valorEnergy">100 Energy Coins</div>
+                        </div>
+                        <button type="submit" class="botaoTrocar">Trocar</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </main>
+
+        <footer id="rodape">
+            <p>Criado por <strong>@DaniloIDS - 2023</strong> - Todos os direitos reservados</p>
+        </footer>
+    </div>
+    <script>
+        function ocultar(){
+            if(itensMenu.style.display == 'block'){
+                itensMenu.style.display = 'none'
+            } else{
+                itensMenu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

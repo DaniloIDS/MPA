@@ -1,0 +1,88 @@
+.tituloReward{
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem auto;
+    color: var(--contraste);
+}
+
+.mensagemReward{
+    max-width: 90%;
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.mensagemReward > p{
+    padding: 1rem;
+}
+
+.recompensas{
+    max-width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cardRecompensa{
+    max-width: 310px;
+    border: 1px solid rgba(131, 131, 131, 0.712);
+    box-shadow: 2px 2px 20px 4px rgba(139, 139, 139, 0.438);
+    border-radius: 10px;
+    margin: 2rem auto;
+    
+}
+
+.imagemRecompensa{
+    width: 300px;
+    height: 300px;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.descricaoRecompensa{
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--contraste);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.precoRecompensa{
+    width: 100%;
+    height: 2.5rem;
+    background-color: var(--destaque);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.descricaoPreco{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.iconeEnergy{
+    padding-left: 1rem;
+    font-size: 2rem;
+}
+
+.botaoTrocar{
+    margin-right: 1rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
+    border: 1px solid rgb(54, 2, 2);
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    font-family: Verdana, Tahoma, sans-serif;
+    cursor: pointer;
+}
