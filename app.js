@@ -18,9 +18,7 @@ app.listen(process.env.PORTA, ()=>{console.log('Servidor rodando')})
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'templates'))
 
-app.use('/', express.static(path.join(__dirname, '/public')))
+app.use('/', express.static(path.join(__dirname, 'public')))
 
-app.get('/', (req,res)=>{
-    console.log('acessado')
-    res.render('../templates/index.ejs')})
+app.get('/', (req,res)=>{res.render('index')})
 app.use('/users', userRoutes)
