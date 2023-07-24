@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const controllerOFertas = require('../controllers/controllerOfertas')
 
 router.get('/', (req, res)=>{
     res.render('auth')})
@@ -14,5 +15,7 @@ router.get('/market', (req, res)=>{
 router.get('/rewards', (req,res)=>{
     res.render('rewards')
 })
+
+router.post('/', express.urlencoded({extended: true}), controllerOFertas.criarOferta)
 
 module.exports = router
