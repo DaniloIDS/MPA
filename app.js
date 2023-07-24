@@ -22,5 +22,5 @@ app.use('/', express.static(path.join(__dirname, '/public')))
 
 app.get('/', (req,res)=>{
     console.log('acessado')
-    res.render('index')})
+    res.render('../templates/index.ejs')})
 app.use('/users', userRoutes)
