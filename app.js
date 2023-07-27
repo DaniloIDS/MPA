@@ -1,7 +1,7 @@
 require('dotenv').config()
 const path = require('path')
 const express = require('express')
-// const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 const userRoutes = require('./routes/users')
 const app = express()
 const PORTA = process.env.PORTA
@@ -20,8 +20,8 @@ app.get('/', (req, res)=>{
     res.render('index')
 })
 
-// mongoose.connect(process.env.DB_URL)
-// const db = mongoose.connection
+mongoose.connect(process.env.DB_URL)
+const db = mongoose.connection
 
-// db.once('open', ()=>{console.log(`Servidor conectado ao banco de dados!`)})
-// db.on('error', (err)=>{console.log(`Erro na conexão com o banco de dados \n ${err}`)})
+db.once('open', ()=>{console.log(`Servidor conectado ao banco de dados!`)})
+db.on('error', (err)=>{console.log(`Erro na conexão com o banco de dados \n ${err}`)})
