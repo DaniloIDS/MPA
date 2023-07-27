@@ -5,19 +5,19 @@ const mongoose = require('mongoose')
 const userRoutes = require('./routes/users')
 const app = express()
 
-app.set('view engine', 'ejs')
-app.set('views', path.join(__dirname, 'templates'))
+// app.set('view engine', 'ejs')
+// app.set('views', path.join(__dirname, 'templates'))
 
-app.use('/', express.static(path.join(__dirname, 'public')))
-app.use('/users', express.static(path.join(__dirname, 'public')))
+// app.use('/', express.static(path.join(__dirname, 'public')))
+// app.use('/users', express.static(path.join(__dirname, 'public')))
+
+// app.use('/users', userRoutes)
+
+app.listen(process.env.PORTA, ()=>{`Servidor rodando na porta ${process.env.PORTA}`})
 
 app.get('/', (req, res)=>{
-    res.status(200).end('hello world')
+    res.send('hello world')
 })
-
-app.use('/users', userRoutes)
-
-app.listen(process.env.PORTA, ()=>{console.log('Servidor rodando na porta ' + process.env.PORTA)})
 
 // mongoose.connect(process.env.DB_URL)
 // const db = mongoose.connection
