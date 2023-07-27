@@ -17,8 +17,7 @@ app.use('/users', express.static(path.join(__dirname, 'public')))
 app.listen(PORTA, ()=>{`Servidor rodando na porta ${PORTA}`})
 
 app.get('/', (req, res)=>{
-    console.log('executou')
-    res.send('hello world')
+    res.render('index')
 })
 
 // mongoose.connect(process.env.DB_URL)
