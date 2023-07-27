@@ -1,9 +1,10 @@
 require('dotenv').config()
 const path = require('path')
 const express = require('express')
-const mongoose = require('mongoose')
-const userRoutes = require('./routes/users')
+// const mongoose = require('mongoose')
+// const userRoutes = require('./routes/users')
 const app = express()
+const PORTA = process.env.PORTA
 
 // app.set('view engine', 'ejs')
 // app.set('views', path.join(__dirname, 'templates'))
@@ -13,9 +14,10 @@ const app = express()
 
 // app.use('/users', userRoutes)
 
-app.listen(process.env.PORTA, ()=>{`Servidor rodando na porta ${process.env.PORTA}`})
+app.listen(PORTA, ()=>{`Servidor rodando na porta ${PORTA}`})
 
 app.get('/', (req, res)=>{
+    console.log('executou')
     res.send('hello world')
 })
 
