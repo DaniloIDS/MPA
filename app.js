@@ -14,7 +14,7 @@ app.use('/users', express.static(path.join(__dirname, 'public')))
 
 app.use('/users', userRoutes)
 
-app.listen(PORTA, ()=>{`Servidor rodando na porta ${PORTA}`})
+app.listen(PORTA, ()=>{console.log(`Servidor rodando na porta ${PORTA}`)})
 
 app.get('/', (req, res)=>{
     res.render('index')
