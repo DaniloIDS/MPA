@@ -27,8 +27,17 @@ const controllerOFertas = {
         res.redirect('/')
 
             // IMPLEMENTAR PÁGINA DE CONFIRMAÇAÕ NO MODELO
-    }
+    },
 
+    obterTodasOfertas: async function(req, res){
+        const ofertas = await modelOferta.find({})
+        
+        try{
+            res.render('market', {ofertas})
+        }catch(err){
+            res.send(err)
+        }
+    },
 
 }
 

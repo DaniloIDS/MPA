@@ -52,62 +52,32 @@
 
             <div class="ofertas">
 
-                <div class="boxOferta">
-                    <p class="tipoOferta">Compra</p>
-                    <ul class="info-principal">
-                        <li class="info"><span class="realce-info">Código:</span>  3504998</li>
-                        <li class="info"><span class="realce-info">Descrição SAP:</span> Produto X Y Z da ordem de Merlin 1 de Santo Antonio da Padroeita</li>
-                        <li class="info"><span class="realce-info">Quantidade:</span> 300 KG</li>
-                        <li class="info"><span class="realce-info">Nome comercial:</span> Joya</li>
-                    </ul>
-                    
-                    <div class="detalhesCard">
-                        <p class="exibirDetalhes">Exibir Detalhes ...</p>
-                        <ul class="info-secundaria">
-                            <li class="info"><span class="realce-info">Unidade:</span> IDS Company</li>
-                            <li class="info"><span class="realce-info">Planejador:</span> Danilo IDS</li>
-                            <li class="info"><span class="realce-info">Oferta criada em:</span> 20/07/2023 11:59</li>
-                            <li class="info"><span class="realce-info">Oferta expira em:</span> 27/07/2023 11:59</li>
-                            <li class="info"><span class="realce-info">Observação:</span> </li>
-                            <p class="ocultarDetalhes">Ocultar Detalhes ...</p>
-                        </ul>    
-                        <button type="submit" class="botaoAcao">acao</button>
-                    </div>
-
-
-
-
-                </div>
-
-               
-
-
-
-                <!-- ============================================ -->
-
-                <div class="boxOferta">
-                    <p class="tipoOferta">Venda</p>
-                    <ul class="info-principal">
-                        <li class="info"><span class="realce-info">Código:</span>  3504998</li>
-                        <li class="info"><span class="realce-info">Descrição SAP:</span> Produto X Y Z da ordem de Merlin 1 de Santo Antonio da Padroeita</li>
-                        <li class="info"><span class="realce-info">Quantidade:</span> 300 KG</li>
-                        <li class="info"><span class="realce-info">Nome comercial:</span> Joya</li>
-                    </ul>
-                    
-                    <div class="detalhesCard">
-                        <p class="exibirDetalhes">Exibir Detalhes ...</p>
-                        <ul class="info-secundaria">
-                            <li class="info"><span class="realce-info">Unidade:</span> IDS Company</li>
-                            <li class="info"><span class="realce-info">Planejador:</span> Danilo IDS</li>
-                            <li class="info"><span class="realce-info">Oferta criada em:</span> 20/07/2023 11:59</li>
-                            <li class="info"><span class="realce-info">Oferta expira em:</span> 27/07/2023 11:59</li>
-                            <li class="info"><span class="realce-info">Observação:</span> </li>
-                            <p class="ocultarDetalhes">Ocultar Detalhes ...</p>
-                        </ul>    
-                        <button type="submit" class="botaoAcao">acao</button>
-                    </div>
-                </div>
-
+                <%for(oferta of ofertas){%>
+                    <%if(oferta){%>
+                        <div class="boxOferta">
+                            <p class="tipoOferta"><%=oferta.tipoOperacao%></p>
+                            <ul class="info-principal">
+                                <li class="info"><span class="realce-info">Código:</span>  <%=oferta.codigoInsumo%></li>
+                                <li class="info"><span class="realce-info">Descrição SAP:</span> <%=oferta.descricaoSAP%></li>
+                                <li class="info"><span class="realce-info">Quantidade:</span> <%=oferta.quantidadeProduto%> <%=oferta.unidadeMedida%></li>
+                                <li class="info"><span class="realce-info">Nome comercial:</span> <%=oferta.nomeComercial%></li>
+                            </ul>
+                            
+                            <div class="detalhesCard">
+                                <p class="exibirDetalhes">Exibir Detalhes ...</p>
+                                <ul class="info-secundaria">
+                                    <li class="info"><span class="realce-info">Unidade:</span> <%=oferta.unidade%></li>
+                                    <li class="info"><span class="realce-info">Planejador:</span> <%=oferta.planejador%></li>
+                                    <li class="info"><span class="realce-info">Oferta criada em:</span> <%=oferta.ofertaCriadaEm%></li>
+                                    <li class="info"><span class="realce-info">Oferta expira em:</span> <%=oferta.ofertaExpiraEm%></li>
+                                    <li class="info"><span class="realce-info">Observação:</span> <%=oferta.observacao%> </li>
+                                    <p class="ocultarDetalhes">Ocultar Detalhes ...</p>
+                                </ul>    
+                                <button type="submit" class="botaoAcao">acao</button>
+                            </div>
+                        </div>
+                    <%}%>
+                <%}%>
                
             </div>
         

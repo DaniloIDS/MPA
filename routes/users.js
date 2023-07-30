@@ -8,13 +8,13 @@ router.get('/', (req, res)=>{
 router.get('/create-offer', (req, res)=>{
     res.render('create-offer')})
 
-router.get('/market', (req, res)=>{
-    res.render('market')
-})
+router.get('/market', controllerOFertas.obterTodasOfertas)
 
 router.get('/rewards', (req,res)=>{
     res.render('rewards')
 })
+
+router.get('/all', controllerOFertas.obterTodasOfertas)
 
 router.post('/', express.urlencoded({extended: true}), controllerOFertas.criarOferta)
 
