@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/config.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <title>MPA</title>
+</head>
+<body>
+    <div id="container">
+        <header id="cabecalho">
+            <div class="containerLogo">
+                <h1 id="tituloPrincipal">Market Planejadores Agroind</h1>
+            </div>
+
+            <span id="burger" class="material-icons" onclick="ocultar()">menu</span>
+            <menu id="itensMenu">
+            <ul class="menu-list">
+                <li><a href="create-offer" class="menu-item"><span class="material-icons item">attach_money</span>Criar Oferta</span></a></li>
+                <li><a href="market" class="menu-item"><span class="material-icons item">store</span> Market</a></li>
+                <li><a href="rewards" class="menu-item"><span class="material-icons item">emoji_events</span>Prêmios</a></li>
+                <li><a href="#" class="menu-item"><span class="material-icons item">settings</span>Configurações</a></li>
+                <li><a href="/" class="menu-item"><span class="material-icons item">logout</span>Encerrar Seção</a></li>
+            </ul>
+            </menu>
+        </header>
+
+        <main id="secaoPrincipal">
+
+            <h1>Ops... encontramos um erro!</h1>
+
+        
+                <%if(msg){%>
+                    <%=msg%>
+                <%}else{%>
+                    <h1><%="Houve um erro desconhecido."%></h1>
+                <%}%>
+            
+            <p>Por gentileza, entre em contato com o Service Desk e informe o erro acima.</p>
+
+
+        </main>
+
+        <footer id="rodape">
+            <p>Criado por <strong>@DaniloIDS - 2023</strong> - Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <script>
+        function ocultar(){
+            if(itensMenu.style.display == 'block'){
+                itensMenu.style.display = 'none'
+            } else{
+                itensMenu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

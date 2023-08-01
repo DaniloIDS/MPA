@@ -18,9 +18,8 @@ const controllerOFertas = {
             const resultDoc = await new modelOferta(oferta).save()
             console.log(resultDoc)
         }catch(err){
-            console.log(err)
-            res.redirect('/')
-            
+            const msg = {msg: err}
+            res.render('error', msg)
             // IMPLEMENTAR PÁGINA DE ERRO
         }
         
