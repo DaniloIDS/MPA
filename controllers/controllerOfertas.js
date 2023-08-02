@@ -20,11 +20,8 @@ const controllerOFertas = {
         }catch(err){
             const msg = {msg: err}
             res.render('error', msg)
-            // IMPLEMENTAR PÁGINA DE ERRO
+           
         }
-        
-        res.redirect('/')
-
             // IMPLEMENTAR PÁGINA DE CONFIRMAÇAÕ NO MODELO
     },
 
